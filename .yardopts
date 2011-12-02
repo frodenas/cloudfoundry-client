@@ -1,0 +1,9 @@
+--no-private
+--protected
+--output-dir doc/yard
+--tag authenticated:"Requires a user logged in"
+--tag admin:"Requires an admin user logged in"
+--markup markdown
+-
+CHANGELOG.md
+LICENSE

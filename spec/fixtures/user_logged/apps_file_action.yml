@@ -1,0 +1,54 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/newapp/instances/0/files/app/app.js
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:40 GMT
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Vary: 
+      - Accept-Encoding
+      Etag: 
+      - "\"845747baf6ef4d324e4dc3a42f193e2f\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge
+      Content-Encoding: 
+      - gzip
+    body: !binary |
+      H4sIAAAAAAAAA3RRTW+DMAy98yu8U4LKgG039iFVXLgVrdWuFQK3IKUJSxy2
+      qe1/n0OlqZO2W579/PyeMzUWeqIRnsHiux8sShGwiB+jiXvequsWw9CJqtV6
+      w3XtlWIUiL1xxJXRmhadS1FP6Vu5rLfLut7O7NMJhDJtowJTXNRHY/8dqlev
+      89BDnudRFDylrcWGcI12Qit3Xrc0GA2SjSfs3sVwjCA80g87EFbYdPI+zxM4
+      itJoQk23m68RRQGC8JOyng5KnDnO1ZAUT/3dS4VKGdhZcwDqEUplfHcDIfkv
+      6jQ0rAWLS/gFiCKAEOqHibpjyYw1w/Q5TtXg2IkMpGS+Xzhna7QzClNl9lJc
+      8oH1Wg96Dw3NH1Rk2Z+beKHIWPsbAAD//wMAOp/drckBAAA=
+
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:39 GMT
+recorded_with: VCR 2.0.0.beta2

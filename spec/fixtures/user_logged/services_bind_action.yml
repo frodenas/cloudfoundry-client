@@ -1,0 +1,161 @@
+--- 
+http_interactions: 
+- request: 
+    method: post
+    uri: http://api.vcap.me:80/apps
+    body: "{\"name\":\"newapp\",\"uris\":[\"newapp.vcap.me\"],\"instances\":1,\"staging\":{\"model\":\"node\"},\"resources\":{\"memory\":64}}"
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+  response: 
+    status: 
+      code: 302
+      message: Moved Temporarily
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:47 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Location: 
+      - http://api.vcap.me/apps/newapp
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"result\":\"success\",\"redirect\":\"http://api.vcap.me/apps/newapp\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:46 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/services/redis-mock
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:47 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Etag: 
+      - "\"4d597daf1e538043afab00e953920f32\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"name\":\"redis-mock\",\"type\":\"key-value\",\"vendor\":\"redis\",\"version\":\"2.2\",\"tier\":\"free\",\"properties\":{},\"meta\":{\"created\":1322788185,\"updated\":1322788185,\"tags\":[\"redis\",\"redis-2.2\",\"key-value\",\"nosql\"],\"version\":1}}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:46 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/newapp
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:47 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Etag: 
+      - "\"167675c961893e367f1735839bd88b34\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"name\":\"newapp\",\"staging\":{\"model\":\"node\",\"stack\":\"node\"},\"uris\":[\"newapp.vcap.me\"],\"instances\":1,\"runningInstances\":0,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STOPPED\",\"services\":[],\"version\":\"76c047be2a7bf6516de48594a05d4564-0\",\"env\":[],\"meta\":{\"debug\":null,\"version\":1,\"created\":1322788187}}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:46 GMT
+- request: 
+    method: put
+    uri: http://api.vcap.me:80/apps/newapp
+    body: "{\"name\":\"newapp\",\"staging\":{\"model\":\"node\",\"stack\":\"node\"},\"uris\":[\"newapp.vcap.me\"],\"instances\":1,\"runningInstances\":0,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STOPPED\",\"services\":[\"redis-mock\"],\"version\":\"76c047be2a7bf6516de48594a05d4564-0\",\"env\":[],\"meta\":{\"debug\":null,\"version\":1,\"created\":1322788187}}"
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:47 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: " "
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:46 GMT
+recorded_with: VCR 2.0.0.beta2

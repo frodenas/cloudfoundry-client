@@ -1,0 +1,62 @@
+--- 
+http_interactions: 
+- request: 
+    method: put
+    uri: http://api.vcap.me:80/apps/newapp/application
+    body: !binary |
+      LS0tLS0tLS0tLS0tLVJ1YnlNdWx0aXBhcnRQb3N0DQpDb250ZW50LURpc3Bv
+      c2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9ImFwcGxpY2F0aW9uIjsgZmlsZW5h
+      bWU9ImFwcC56aXAiDQpDb250ZW50LUxlbmd0aDogNDQxDQpDb250ZW50LVR5
+      cGU6IGFwcGxpY2F0aW9uL3ppcA0KQ29udGVudC1UcmFuc2Zlci1FbmNvZGlu
+      ZzogYmluYXJ5DQoNClBLAwQUAAAACABDmXs/Op/drRcBAADJAQAABgAcAGFw
+      cC5qc1VUCQAD/nzSTl0X2E51eAsAAQT1AQAABBQAAAB1UctugzAQvPMV25ON
+      QoG2N/qQIi7cgpqo1wjBJiA5NrXXtFWSf++aSFVUtTePd2Y8s54aCz3RCM9g
+      8d0PFqUIWMSP0cQzb9X1iGGYRNVqveF77ZViFIi9ccQ3ozUtOpeintK3cllv
+      l3W9ndmnEwhl2kYFpri4j8b+K6pXr7PoIc/zKAqZ0tZiQ7hGO6GVO69bGowG
+      yekSjuhiOEYQDumHHQgrbDp5n+cJHEVpNKGm283XiKIAQfhJWU8HJc5c50ok
+      xVN/91KhUgZ21hyAeoRSGd/dgPhNnYaGvWBxKb8AUQQQSv0wUXdsmbFnUJ/j
+      VA2Ok8hASub9hXW2RjujMFVmL8WlH1iv9aD30ND8QUWW/flSABl7fwNQSwEC
+      HgMUAAAACABDmXs/Op/drRcBAADJAQAABgAYAAAAAAABAAAApIEAAAAAYXBw
+      LmpzVVQFAAP+fNJOdXgLAAEE9QEAAAQUAAAAUEsFBgAAAAABAAEATAAAAFcB
+      AAAAAA0KLS0tLS0tLS0tLS0tLVJ1YnlNdWx0aXBhcnRQb3N0DQpDb250ZW50
+      LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InJlc291cmNlcyINCg0K
+      W10NCi0tLS0tLS0tLS0tLS1SdWJ5TXVsdGlwYXJ0UG9zdC0tDQoNCg==
+
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Content-Type: 
+      - multipart/form-data;boundary=-----------RubyMultipartPost
+      Content-Length: 
+      - "760"
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:38 GMT
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Vary: 
+      - Accept-Encoding
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: " "
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:37 GMT
+recorded_with: VCR 2.0.0.beta2

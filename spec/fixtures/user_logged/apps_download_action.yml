@@ -1,0 +1,55 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/newapp/application
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:40 GMT
+      Content-Type: 
+      - application/octet-stream
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Content-Disposition: 
+      - attachment; filename="46c0a630f12c9970996304e0d7e3848e8ea02342"
+      Content-Transfer-Encoding: 
+      - binary
+      Cache-Control: 
+      - private
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: !binary |
+      UEsDBBQAAAAIAEOZez86n92tFwEAAMkBAAAGABwAYXBwLmpzVVQJAAP+fNJO
+      UiXYTnV4CwABBOgDAAAE6AMAAHVRy26DMBC88xXbk41CgbY3+pAiLtyCmqjX
+      CMEmIDk2tde0VZJ/75pIVVS1N493ZjyznhoLPdEIz2Dx3Q8WpQhYxI/RxDNv
+      1fWIYZhE1Wq94XvtlWIUiL1xxDejNS06l6Ke0rdyWW+Xdb2d2acTCGXaRgWm
+      uLiPxv4rqlevs+ghz/MoCpnS1mJDuEY7oZU7r1sajAbJ6RKO6GI4RhAO6Ycd
+      CCtsOnmf5wkcRWk0oabbzdeIogBB+ElZTwclzlznSiTFU3/3UqFSBnbWHIB6
+      hFIZ392A+E2dhoa9YHEpvwBRBBBK/TBRd2yZsWdQn+NUDY6TyEBK5v2FdbZG
+      O6MwVWYvxaUfWK/1oPfQ0PxBRZb9+VIAGXt/A1BLAQIeAxQAAAAIAEOZez86
+      n92tFwEAAMkBAAAGABgAAAAAAAEAAACkgQAAAABhcHAuanNVVAUAA/580k51
+      eAsAAQToAwAABOgDAABQSwUGAAAAAAEAAQBMAAAAVwEAAAAA
+
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:38 GMT
+recorded_with: VCR 2.0.0.beta2

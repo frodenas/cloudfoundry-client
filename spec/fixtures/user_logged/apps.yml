@@ -1,0 +1,828 @@
+--- 
+http_interactions: 
+- request: 
+    method: post
+    uri: http://api.vcap.me:80/apps
+    body: "{\"name\":\"newapp\",\"instances\":1}"
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+  response: 
+    status: 
+      code: 400
+      message: Bad Request
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:35 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":308,\"description\":\"Invalid framework description: 'NONE'\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:34 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:36 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Etag: 
+      - "\"aa90afe7a7b4848b828be64a52510d08\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "[{\"name\":\"newapp\",\"staging\":{\"model\":\"node\",\"stack\":\"node\"},\"uris\":[\"newapp.vcap.me\"],\"instances\":1,\"runningInstances\":null,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STOPPED\",\"services\":[],\"version\":\"4064f2adcae38ca6618493d61c77ca02-0\",\"env\":[],\"meta\":{\"debug\":null,\"version\":1,\"created\":1322788176}},{\"name\":\"newapp\",\"staging\":{\"model\":\"node\",\"stack\":\"node\"},\"uris\":[\"newapp.vcap.me\"],\"instances\":1,\"runningInstances\":null,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STOPPED\",\"services\":[],\"version\":\"43063054166406f64a56f2d45b7bbd4f-0\",\"env\":[],\"meta\":{\"debug\":null,\"version\":1,\"created\":1322788176}}]"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:34 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/noapp
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:36 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:35 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/newapp
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:36 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Etag: 
+      - "\"0add7cf429b9bdad147d9dfb6bb55e19\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"name\":\"newapp\",\"staging\":{\"model\":\"node\",\"stack\":\"node\"},\"uris\":[\"newapp.vcap.me\"],\"instances\":1,\"runningInstances\":0,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STOPPED\",\"services\":[],\"version\":\"86e45ab956e1a0bbd648a9dda3bc3298-0\",\"env\":[],\"meta\":{\"debug\":null,\"version\":1,\"created\":1322788176}}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:35 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/noapp/instances
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:36 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:35 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/newapp/instances
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:36 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Etag: 
+      - "\"1439580006f77fa0b8481cdc5a207b66\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"instances\":[]}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:35 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/noapp/stats
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:36 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:35 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/newapp/stats
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:36 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Etag: 
+      - "\"99914b932bd37a50b983c5e7c90ae93b\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:35 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/noapp/crashes
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:36 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:35 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/newapp/crashes
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:36 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Etag: 
+      - "\"8f95df9c232fa5b8b530dcbe0687c0d0\""
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"crashes\":[]}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:35 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/noapp/instances/0/files/
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:36 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:35 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/newapp/instances/0/files/
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 400
+      message: Bad Request
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:37 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":305,\"description\":\"Operation not permitted on a stopped app\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:35 GMT
+- request: 
+    method: put
+    uri: http://api.vcap.me:80/apps/noapp
+    body: "{\"name\":\"noapp\"}"
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:37 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:36 GMT
+- request: 
+    method: put
+    uri: http://api.vcap.me:80/apps/newapp
+    body: "{\"name\":\"newapp\",\"staging\":{\"model\":\"node\",\"stack\":\"node\"},\"uris\":[\"newapp.vcap.me\"],\"instances\":2,\"runningInstances\":0,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STOPPED\",\"services\":[],\"version\":\"86e45ab956e1a0bbd648a9dda3bc3298-0\",\"env\":[],\"meta\":{\"debug\":null,\"version\":1,\"created\":1322788176}}"
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:37 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: " "
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:36 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/noapp/update
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - application/json
+      Content-Type: 
+      - application/json
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:37 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:36 GMT
+- request: 
+    method: put
+    uri: http://api.vcap.me:80/apps/noapp/application
+    body: !binary |
+      LS0tLS0tLS0tLS0tLVJ1YnlNdWx0aXBhcnRQb3N0DQpDb250ZW50LURpc3Bv
+      c2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9ImFwcGxpY2F0aW9uIjsgZmlsZW5h
+      bWU9ImFwcC56aXAiDQpDb250ZW50LUxlbmd0aDogNDQxDQpDb250ZW50LVR5
+      cGU6IGFwcGxpY2F0aW9uL3ppcA0KQ29udGVudC1UcmFuc2Zlci1FbmNvZGlu
+      ZzogYmluYXJ5DQoNClBLAwQUAAAACABDmXs/Op/drRcBAADJAQAABgAcAGFw
+      cC5qc1VUCQAD/nzSTl0X2E51eAsAAQT1AQAABBQAAAB1UctugzAQvPMV25ON
+      QoG2N/qQIi7cgpqo1wjBJiA5NrXXtFWSf++aSFVUtTePd2Y8s54aCz3RCM9g
+      8d0PFqUIWMSP0cQzb9X1iGGYRNVqveF77ZViFIi9ccQ3ozUtOpeintK3cllv
+      l3W9ndmnEwhl2kYFpri4j8b+K6pXr7PoIc/zKAqZ0tZiQ7hGO6GVO69bGowG
+      yekSjuhiOEYQDumHHQgrbDp5n+cJHEVpNKGm283XiKIAQfhJWU8HJc5c50ok
+      xVN/91KhUgZ21hyAeoRSGd/dgPhNnYaGvWBxKb8AUQQQSv0wUXdsmbFnUJ/j
+      VA2Ok8hASub9hXW2RjujMFVmL8WlH1iv9aD30ND8QUWW/flSABl7fwNQSwEC
+      HgMUAAAACABDmXs/Op/drRcBAADJAQAABgAYAAAAAAABAAAApIEAAAAAYXBw
+      LmpzVVQFAAP+fNJOdXgLAAEE9QEAAAQUAAAAUEsFBgAAAAABAAEATAAAAFcB
+      AAAAAA0KLS0tLS0tLS0tLS0tLVJ1YnlNdWx0aXBhcnRQb3N0DQpDb250ZW50
+      LURpc3Bvc2l0aW9uOiBmb3JtLWRhdGE7IG5hbWU9InJlc291cmNlcyINCg0K
+      W10NCi0tLS0tLS0tLS0tLS1SdWJ5TXVsdGlwYXJ0UG9zdC0tDQoNCg==
+
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Content-Type: 
+      - multipart/form-data;boundary=-----------RubyMultipartPost
+      Content-Length: 
+      - "760"
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:37 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:36 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/noapp/application
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:37 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:36 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/newapp/application
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:37 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:36 GMT
+- request: 
+    method: get
+    uri: http://api.vcap.me:80/apps/newapp/instances/0/files/app/nofile
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept-Encoding: 
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 500
+      message: Internal Server Error
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:40 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":306,\"description\":\"Error retrieving file 'app/nofile'\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:39 GMT
+- request: 
+    method: delete
+    uri: http://api.vcap.me:80/apps/noapp
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:42 GMT
+      Content-Type: 
+      - application/json; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: "{\"code\":301,\"description\":\"Application not found\"}"
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:41 GMT
+- request: 
+    method: delete
+    uri: http://api.vcap.me:80/apps/newapp
+    body: ""
+    headers: 
+      User-Agent: 
+      - cloudfoundry-client-0.1.0
+      Authorization: 
+      - 04085b084922117573657240766361702e6d65063a0645546c2b073101dc4e2219f848b1aea2d82a2a6981750fa1aac61104aed60f
+      Accept: 
+      - "*/*"
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Server: 
+      - nginx/0.7.65
+      Date: 
+      - Fri, 02 Dec 2011 01:09:42 GMT
+      Content-Type: 
+      - text/html; charset=utf-8
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+      Keep-Alive: 
+      - timeout=20
+      Vary: 
+      - Accept-Encoding
+      Cache-Control: 
+      - no-cache
+      X-Ua-Compatible: 
+      - IE=Edge
+    body: " "
+    http_version: 
+  recorded_at: Fri, 02 Dec 2011 01:09:41 GMT
+recorded_with: VCR 2.0.0.beta2
