@@ -45,7 +45,8 @@ describe "Cloudfoundry::Client::Resources" do
           :fn => filename
         }
         resources_manifest = @cf_client.check_resources(resources)
-        resources_manifest.should eql(resources)
+        resources_manifest[0][:size].should eql(resources[0][:size])
+        resources_manifest[0][:sha1].should eql(resources[0][:sha1])
       end
     end
   end
