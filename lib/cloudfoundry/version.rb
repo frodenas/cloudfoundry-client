@@ -13,7 +13,7 @@ module CloudFoundry
 
     # Patch CloudFoundry::Client Version.
     def self.patch
-      0
+      1
     end
 
     # Pre CloudFoundry::Client Version.
