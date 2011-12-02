@@ -24,7 +24,7 @@ Usage Examples
 
 ### Connection and login:
 
-    require "cloudfoundry-client"
+    require "cloudfoundry"
     cf_client = CloudFoundry::Client.new({:target_url => "https://api.cloudfoundry.com"})
     cf_client.login("user@vcap.me", "password")
 
@@ -89,7 +89,7 @@ Submitting an Issue
 -------------------
 We use the [GitHub issue tracker](http://github.com/frodenas/cloudfoundry-client/issues) to track bugs and features.
 Before submitting a bug report or feature request, check to make sure it hasn't already been submitted. You can indicate
-support for an existing issuse by voting it up. When submitting a bug report, please include a
+support for an existing issue by voting it up. When submitting a bug report, please include a
 [Gist](http://gist.github.com/) that includes a stack trace and any details that may be necessary to reproduce the bug,
 including your gem version, Ruby version, and operating system. Ideally, a bug report should include a pull request with
  failing specs.
