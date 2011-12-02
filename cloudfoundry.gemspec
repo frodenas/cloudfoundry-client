@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
 
   s.add_development_dependency("rake", ">= 0.9.2.2")
+  s.add_development_dependency("activesupport", ">= 3.1.3")
   s.add_development_dependency("rspec", ">= 2.7.0")
   s.add_development_dependency("webmock", ">= 1.7.8")
   s.add_development_dependency("vcr", ">= 2.0.0.beta2")
