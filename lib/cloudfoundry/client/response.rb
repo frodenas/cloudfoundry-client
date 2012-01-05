@@ -12,7 +12,7 @@ module CloudFoundry
         def parse(body)
           case body
             when " " then nil
-            else JSON.parse(body, :symbolize_names => true)
+            else JSON.parse(body, :symbolize_names => true, :symbolize_keys => true)
           end
         rescue JSON::ParserError
           raise CloudFoundry::Client::Exception::BadResponse, "Can't parse response into JSON:" + body
