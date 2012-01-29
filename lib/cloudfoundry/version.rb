@@ -8,12 +8,12 @@ module CloudFoundry
 
     # Minor CloudFoundry::Client Version.
     def self.minor
-      1
+      2
     end
 
     # Patch CloudFoundry::Client Version.
     def self.patch
-      1
+      0
     end
 
     # Pre CloudFoundry::Client Version.
