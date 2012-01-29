@@ -14,13 +14,13 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
 
   s.add_development_dependency("rake", ">= 0.9.2.2")
-  s.add_development_dependency("activesupport", ">= 3.1.3")
-  s.add_development_dependency("rspec", ">= 2.7.0")
-  s.add_development_dependency("webmock", ">= 1.7.8")
-  s.add_development_dependency("vcr", ">= 2.0.0.beta2")
+  s.add_development_dependency("activesupport", ">= 3.2.1")
+  s.add_development_dependency("rspec", ">= 2.8.0")
+  s.add_development_dependency("webmock", ">= 1.7.10")
+  s.add_development_dependency("vcr", ">= 2.0.0.rc1")
 
-  s.add_runtime_dependency("faraday", ">= 0.7.5")
-  s.add_runtime_dependency("json_pure", ">= 1.6.2")
+  s.add_runtime_dependency("faraday", ">= 0.7.6")
+  s.add_runtime_dependency("json_pure", ">= 1.6.5")
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- spec/*`.split("\n")
