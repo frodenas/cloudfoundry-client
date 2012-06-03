@@ -56,7 +56,7 @@ module CloudFoundry
         connection = Faraday.new(connection_options) do |builder|
           builder.use Faraday::Request::Multipart
           builder.use Faraday::Request::UrlEncoded
-          builder.use Faraday::Request::JSON unless options[:raw]
+          builder.use FaradayMiddleware::EncodeJson unless options[:raw]
           builder.adapter @net_adapter
           builder.use CloudFoundry::Client::Response::ParseJSON unless options[:raw]
           builder.use CloudFoundry::Client::Response::CloudError

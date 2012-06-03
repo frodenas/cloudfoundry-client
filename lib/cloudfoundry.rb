@@ -1,4 +1,5 @@
 require 'faraday'
+require 'faraday_middleware'
 require 'json/pure'
 
 # This is a Ruby wrapper for the CloudFoundry API, the industry’s first open Platform as a Service (PaaS) offering.
