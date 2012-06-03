@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+0.3.0 - June 3, 2012
+------------------------
+* [Upgrade some outdate gems](https://github.com/frodenas/cloudfoundry-client/commit/bd13fc17685a93fc6af24a5e620e806a58236a78)
+* [Add missing dependency (when running under rvm or rbenv)](https://github.com/frodenas/cloudfoundry-client/commit/ad1032e18d70e331138aa07d04fb4062cc18c19b)
+
 0.2.0 - January 29, 2012
 ------------------------
 * [Add some development dependencies](https://github.com/frodenas/cloudfoundry-client/commit/27566b03e15bdbb4dfbefff7956ac320f069fe0b)
