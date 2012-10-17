@@ -80,6 +80,10 @@ module CloudFoundry
         headers["Content-Type"] = "application/json" unless options[:raw]
         response = connection(options).send(method, path) do |request|
           request.headers = headers
+		  #Defaut timeout is too short.
+          #Set request timeout 20 seconds.
+          request.options[:timeout] = 20
+          request.options[:open_timeout] = 20
           request.body = payload unless payload && payload.empty?
         end
         options[:raw] ? response : response.body
